@@ -547,12 +547,14 @@ ul.social-media {
 }
 .contact .right form .fields{
     display: flex;
+    position: relative;
 }
 .contact .right form .field,
 .contact .right form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
+    position: relative;
 }
 .contact .right form .textarea{
     height: 80px;
@@ -572,11 +574,17 @@ ul.social-media {
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    padding-left: 40px;
 }
 input:focus, textarea:focus {
     border: 1px solid #FF8C00 !important;
 }
 input:focus::placeholder, textarea:focus::placeholder {
+    transition: all .3s ease;
+    color: #FF8C00;
+}
+input:focus + .fas, textarea:focus + .fas {
+    transition: all .3s ease;
     color: #FF8C00;
 }
 .contact .right form .field input:focus,
@@ -813,6 +821,10 @@ ul.nav-footer {
     display: flex;
     flex-direction: column;
 }
-
-
+.field.name i, .field.email i, .field.subject i , textarea ~ i { 
+    position: absolute;
+    left: 0;
+    top:15px;
+    padding-left: 15px;
+}
 
