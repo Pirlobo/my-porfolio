@@ -375,7 +375,7 @@ ul.social-media {
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "what I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
