@@ -38,7 +38,7 @@ footer {
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .interests, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -164,7 +164,7 @@ ul.social-media {
     flex-direction: column;
     max-width: 45px;
     top: 100px;
-    right: 45px;
+    right: 40px;
     bottom: 10px;
     height: fit-content;
     opacity: 0;
@@ -327,16 +327,16 @@ ul.social-media {
 }
 
 /* services section styling */
-.services, .teams{
+.services, .interests{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.interests .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.interests .title::after{
     background: #111;
     content: "What I provide";
 }
@@ -446,11 +446,11 @@ ul.social-media {
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* interests section styling */
+.interests .title::after{
+    content: "Interested in";
 }
-.teams .carousel .card{
+.interests .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -458,25 +458,25 @@ ul.social-media {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.interests .carousel .card:hover{
     background: #FF8C00;
 }
-.teams .carousel .card .box{
+.interests .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.interests .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.interests .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.interests .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -484,7 +484,7 @@ ul.social-media {
     border: 5px solid #FF8C00;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.interests .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -731,6 +731,9 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .social-media { 
+        right: 24.5px;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -768,9 +771,6 @@ footer span a:hover{
     }
     .right form .error-box{
        width: 150px;
-    }
-    .social-media {
-        right: 26px;
     }
     .scroll-up-btn{
         right: 15px;
