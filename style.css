@@ -341,7 +341,8 @@ ul.social-media {
     content: "What I provide";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    position: relative;
+    width: calc(33% - 20px) ;
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -349,6 +350,38 @@ ul.social-media {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius : 6px;
+    left: 0;
+    border-width: 1rem;
+    border-style: solid;
+    border-color : rgb(70, 69, 69) rgb(70, 69, 69) #111 #111;
+    /* Firefox 3.0 damage limitation */
+    display: block; width: 0;
+    transition: all 0.3s ease;
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-width: 1rem;
+    border-bottom-left-radius : 6px;
+    border-style: solid;
+    border-color : #111 #111 rgb(70, 69, 69) rgb(70, 69, 69);
+    /* Firefox 3.0 damage limitation */
+    display: block; width: 0;
+    transition: all 0.3s ease;
+  }
+   .card:hover::after{
+    border-color : rgb(240, 199, 118) rgb(240, 199, 118) #111 #111;
+  }
+  .card:hover::before {
+    border-color : #111 #111 rgb(240, 199, 118) rgb(240, 199, 118);
+  }
 .services .serv-content .card:hover{
     background: #FF8C00;
 }
