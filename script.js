@@ -11,9 +11,21 @@ $(document).ready(function(){
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
             $('.social-media').addClass("social-media-icons");
+            $('.about-content').addClass("slide");
         }else{
             $('.scroll-up-btn').removeClass("show");
             $('.social-media').removeClass("social-media-icons");
+            $('.about-content').removeClass("slide");
+        }
+        if(this.scrollY > 1000){
+            $('.serv-content').addClass("serv-card-show");
+        }else{
+            $('.serv-content').removeClass("serv-card-show");
+        }
+        if(this.scrollY > 1600){
+            $('.skills-content').addClass("skills-progress");
+        }else{
+            $('.skills-content').removeClass("skills-progress");
         }
     });
 
