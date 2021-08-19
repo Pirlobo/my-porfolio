@@ -644,6 +644,7 @@ img {
 }
 .contact .right form .fields{
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 .contact .right form .field,
