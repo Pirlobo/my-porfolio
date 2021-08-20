@@ -289,8 +289,7 @@ ul.social-media {
     width: 100%;
 }
 .home .home-content .home-a {
-    display: flex;
-    flex-direction: row;
+    display: block;
     z-index: 2;
 }
 .home .home-content .home-a a {
