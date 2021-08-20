@@ -881,8 +881,11 @@ footer span a:hover{
     }
 }
 @media (max-width: 480px) { 
+    .home .home-content .home-a a {
+        margin-left: .5rem !important;
+    }
     .home .home-content .text-2{
-        font-size: 2rempx;
+        font-size: 2rem;
     }
     .home .home-content .text-3{
         font-size: 1rem;
