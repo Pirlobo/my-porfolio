@@ -436,7 +436,7 @@ ul.social-media {
     content: "";
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 100px;
     border-width: 1rem;
     border-bottom-left-radius : 6px;
     border-style: solid;
@@ -604,12 +604,13 @@ img {
     margin-left: 10px;
 }
 .interests .carousel .card{
+    margin-top: 100px;
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-    overflow: hidden;
     transition: all 0.3s ease;
+    height: 300px
 }
 .interests .carousel .card:hover{
     background: #3DCFD3;
@@ -620,6 +621,9 @@ img {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    position: relative;
+    top: -100px;
+    z-index: 1;
 }
 .interests .carousel .card:hover .box{
     transform: scale(1.05);

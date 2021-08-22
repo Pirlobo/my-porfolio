@@ -60,7 +60,7 @@ $(document).ready(function(){
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeOut: 90000,
         autoplayHoverPause: true,
         responsive: {
             0:{
