@@ -60,6 +60,10 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+.max-width > h2 i {
+    font-size: 3.5rem;
+    color: #3DCFD3;
+}
 section .title::before{
     content: "";
     position: absolute;
@@ -464,19 +468,26 @@ ul.social-media {
     opacity: 0;
 }
 .serv-content.serv-card-show .card .box{
-    transition: all 3s ease;
+    transition: all 2.5s ease;
     opacity: 1;
 }
 @media (min-width: 947px){
     .serv-content.serv-card-show .card#card3, .serv-content.serv-card-show .card#card1{
-        margin-top: 150px;
+        position: relative;
+        top: 70px;
     }
     .serv-content {
-    margin-top: -100px;
+    margin-top: 50px;
     }
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
+}
+.serv-content i {
+    transition: all 1s ease !important;
+}
+.spin {
+    transform: rotate(360deg);
 }
 .services .serv-content .card i{
     font-size: 2.5rem;

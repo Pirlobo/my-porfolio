@@ -18,8 +18,10 @@ $(document).ready(function(){
             $('.about-content').removeClass("slide");
         }
         if(this.scrollY > 1000){
+            $('.serv-content .card i').addClass("spin");
             $('.serv-content').addClass("serv-card-show");
         }else{
+            $('.serv-content .card i').removeClass("spin");
             $('.serv-content').removeClass("serv-card-show");
         }
         if(this.scrollY > 1600){
