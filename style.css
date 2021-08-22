@@ -311,7 +311,7 @@ ul.social-media {
 }
 /* about section styling */
 .about .title::after{
-    content: "Introduction";
+    content: "introduction";
 }
 .about .about-content .left{
     position: absolute;
@@ -592,7 +592,7 @@ img {
 
 /* interests section styling */
 .interests .title::after{
-    content: "Interested in";
+    content: "interested in";
 }
 .bars .info span > i {
     font-size: 2rem;
