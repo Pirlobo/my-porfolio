@@ -436,7 +436,7 @@ ul.social-media {
     content: "";
     position: absolute;
     right: 0px;
-    top: 100px;
+    top: 0px;
     border-width: 1rem;
     border-bottom-left-radius : 6px;
     border-style: solid;
@@ -444,6 +444,9 @@ ul.social-media {
     /* Firefox 3.0 damage limitation */
     display: block; width: 0;
     transition: all 0.3s ease;
+  }
+  .interests .card:before {
+    top: 100px;
   }
    .card:hover::after{
     border-color : #abfcff #abfcff #111 #111;
