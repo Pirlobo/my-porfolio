@@ -410,7 +410,7 @@ ul.social-media {
 .services .title::after,
 .interests .title::after{
     background: #111;
-    content: "what I provide";
+    content: "my services";
 }
 .services .serv-content .card{
     position: relative;
