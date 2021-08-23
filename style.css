@@ -414,13 +414,13 @@ ul.social-media {
 }
 .services .serv-content .card{
     position: relative;
-    width: calc(33% - 10px) ;
+    width: calc(33% - 20px) ;
     background: #242625;
     border-radius: 10px;
-    box-shadow: 25px 25px 50px #1b1c1b, -25px -25px 50px #2d302f;
+    box-shadow: 25px 25px 50px #111, -25px -25px 50px #2d302f;
     border: solid #3DCFD3 1px;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -657,7 +657,7 @@ img {
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
-    height: 350px
+    height: 360px
 }
 .interests .carousel .card:hover{
     background: #3DCFD3;
